@@ -12,7 +12,53 @@
 
 6. Later, once your repository is ready to be visible, go to the _Settings_ tab in the GitHub repository, to _Options_ and in the _Danger Zone_ you can make the repository public or delete it.
 
+
 ## Linux Users
+
+### Installing and Configuring Git
+
+Git is the software that we use in this guide to track the changes in the files of our local repository. 
+
+From [Wikipedia](https://en.wikipedia.org/wiki/Git):
+
+> Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.
+
+First of all, we have to download and install Git in case it is not currently available in our system. In the Ubuntu terminal type
+
+```sh
+apt-get install git
+```
+
+One installed, a very basic configuration information needs to be provided as well
+
+```sh
+git config --global user.name "username"
+git config --global user.email emailaddress@example.com
+```
+
+The username and email address do not have to coincide with the ones used to create the GitHub account. This configuration data must be provided once and you can overwrite it later by using the previous commands
+
+```sh
+git config --global user.name "username2"
+git config --global user.email emailaddress2@example.com
+```
+
+The configuration data can be checked just by typing
+
+```sh
+git config --list
+```
+
+Git help can be very useful,
+
+```
+git help
+git help <command>
+git <command> --help
+man git-<command>
+```
+
+### Working with Git and GitHub
 
 Go to your existing local repository,
 
@@ -107,3 +153,9 @@ An important step when sharing a repository is generating a README.md file with 
 Basic Latex equations can be visualized by inserting images generated externally in [codecogs](https://www.codecogs.com/latex/eqneditor.php). Enter your Latex code in the upper box and extract the URL Encoded shown in the lower box.
 
 **Tip.** In order to learn how to use the Markdown language for GitHub it is very instructive to check the README.md files in other repositories. These files are merely plain text that can be open with any text editor. 
+
+
+## References
+
+* [Git Documentation](https://git-scm.com/doc)
+* [Git Guide (Spanish)](https://git-scm.com/book/es/v2)
