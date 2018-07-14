@@ -26,7 +26,13 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Git):
 First of all, we have to download and install Git in case it is not currently available in our system. In the Ubuntu terminal type
 
 ```sh
-apt-get install git
+sudo apt-get install git
+```
+
+Sometimes it might be needed to update the repositories list before,
+
+```sh
+sudo apt update
 ```
 
 One installed, a very basic configuration information needs to be provided as well
@@ -140,6 +146,12 @@ adds all the new files to the repository index. The status of the working tree c
 
 ```sh
 git status
+```
+
+In order to get a GitHub repository just move to the directory where you want to download it and type
+
+```sh
+git clone https://github.com/joslorgom/myGitHubIntro
 ```
 
 ## Generating a README.md File for your Repository
